@@ -4,6 +4,7 @@ const port = 3000;
 
 app.get('/', (req, res) => {
     res.send('Hello world')
+    console.log(req.rawHeaders);
 })
 
 app.get('/about', (req, res) => {
